@@ -1,0 +1,77 @@
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+.status-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.status-message.error {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.stock-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.stock-table th, .stock-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.stock-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.2s ease;
+}
+
+
+.positive {
+  color: #28a745; 
+  font-weight: bold;
+}
+
+.negative {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+  .stock-table th, .stock-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+}
